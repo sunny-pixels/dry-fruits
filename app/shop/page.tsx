@@ -3,7 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import CategoryCard from "@/components/shop/CategoryCard";
+import CategoryAccordion from "@/components/shop/CategoryAccordion";
 import ProductGrid from "@/components/shop/ProductGrid";
 import { categories, getProductsByCategory, getBestSellers } from "@/lib/products";
 
@@ -33,15 +33,12 @@ export default function ShopPage() {
         </Container>
 
         <Container className="mt-16">
-          <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-6">
-            {categories.map((category) => (
-              <CategoryCard
-                key={category.slug}
-                category={category}
-                count={getProductsByCategory(category.slug).length}
-              />
-            ))}
-          </div>
+          <CategoryAccordion
+            categories={categories.map((category) => ({
+              ...category,
+              count: getProductsByCategory(category.slug).length,
+            }))}
+          />
         </Container>
 
         <Container className="mt-24 lg:mt-32">

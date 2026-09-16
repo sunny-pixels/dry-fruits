@@ -40,16 +40,16 @@ export const categories: Category[] = [
     image: "/images/shop/nuts-dry-fruits/mixed-dry-fruits.jpg",
   },
   {
-    slug: "dates",
-    name: "Dates",
-    tagline: "Soft, caramel-sweet dates from Ajwa to Medjool",
-    image: "/images/shop/dates/medjool-dates.jpg",
-  },
-  {
     slug: "berries",
     name: "Berries",
     tagline: "Tangy, antioxidant-rich dried berries",
     image: "/images/shop/berries/blueberries.jpg",
+  },
+  {
+    slug: "dates",
+    name: "Dates",
+    tagline: "Soft, caramel-sweet dates from Ajwa to Medjool",
+    image: "/images/shop/dates/medjool-dates.jpg",
   },
   {
     slug: "exclusives",
