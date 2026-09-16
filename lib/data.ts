@@ -52,10 +52,28 @@ export const spotlightProducts = [
     image: "/images/variety-almonds.jpg",
   },
   {
+    name: "Creamy Whole Cashews",
+    description:
+      "Large, buttery W240-grade cashews with a naturally sweet finish — slow dried to lock in that signature creamy bite.",
+    image: "/images/variety-cashews.jpg",
+  },
+  {
+    name: "Iranian Pistachios",
+    description:
+      "Sun-cracked and lightly salted, our pistachios deliver a deep, earthy flavor with a satisfying snap in every shell.",
+    image: "/images/variety-pistachios.jpg",
+  },
+  {
     name: "Whole Kashmiri Walnuts",
     description:
       "Butter-soft kernels harvested from the valleys of Kashmir, cracked fresh to order for maximum flavor and crunch.",
     image: "/images/variety-walnuts.jpg",
+  },
+  {
+    name: "Golden Sun-Dried Raisins",
+    description:
+      "Plump, tangy-sweet raisins sun-dried the traditional way — no added sugar, just concentrated grape goodness.",
+    image: "/images/variety-raisins.jpg",
   },
 ];
 
