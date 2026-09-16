@@ -1,13 +1,39 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import Container from "@/components/ui/Container";
 import { nav } from "@/lib/data";
+import { useCart } from "@/lib/cart-context";
+
+function CartButton({ itemCount, onClick }: { itemCount: number; onClick?: () => void }) {
+  return (
+    <Link
+      href="/cart"
+      onClick={onClick}
+      aria-label={`Cart, ${itemCount} ${itemCount === 1 ? "item" : "items"}`}
+      className="relative flex h-11 w-11 items-center justify-center rounded-full border border-espresso/15 text-espresso transition-colors hover:bg-cocoa/[0.06]"
+    >
+      <svg viewBox="0 0 24 24" fill="none" className="h-4.5 w-4.5">
+        <path
+          d="M16.84,8.082V6.091a4.725,4.725,0,1,0-9.449,0v4.725a.675.675,0,0,0,1.35,0V9.432h5.4V8.082h-5.4V6.091a3.375,3.375,0,0,1,6.75,0v4.691a.675.675,0,1,0,1.35,0V9.433h3.374V21.581H4.017V9.432H6.041V8.082H2.667V21.641a1.289,1.289,0,0,0,1.289,1.29h16.32a1.289,1.289,0,0,0,1.289-1.29V8.082Z"
+          fill="currentColor"
+        />
+      </svg>
+      {itemCount > 0 && (
+        <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-amber text-[10px] font-bold text-cream">
+          {itemCount > 9 ? "9+" : itemCount}
+        </span>
+      )}
+    </Link>
+  );
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { itemCount } = useCart();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -28,27 +54,28 @@ export default function Navbar() {
       }`}
     >
       <Container className="flex items-center justify-between py-5">
-        <a href="#" className="font-heading text-2xl font-bold text-espresso">
+        <Link href="/" className="font-heading text-2xl font-bold text-espresso">
           Nutrafi.
-        </a>
+        </Link>
         <nav className="hidden md:flex items-center gap-10">
           {nav.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="text-sm font-semibold text-espresso/80 hover:text-espresso transition-colors"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <a
-            href="#offers"
+          <CartButton itemCount={itemCount} />
+          <Link
+            href="/shop"
             className="hidden sm:inline-flex rounded-full bg-espresso text-cream text-sm font-semibold px-6 py-2.5 hover:bg-cocoa transition-colors"
           >
             Shop Now
-          </a>
+          </Link>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -88,22 +115,22 @@ export default function Navbar() {
           >
             <Container className="flex flex-col gap-1 py-4">
               {nav.map((item) => (
-                <a
+                <Link
                   key={item.label}
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="py-3 text-base font-semibold text-espresso/80 hover:text-espresso transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#offers"
+              <Link
+                href="/shop"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex justify-center rounded-full bg-espresso text-cream text-sm font-semibold px-6 py-3 hover:bg-cocoa transition-colors"
               >
                 Shop Now
-              </a>
+              </Link>
             </Container>
           </motion.nav>
         )}
