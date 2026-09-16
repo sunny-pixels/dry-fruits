@@ -5,6 +5,13 @@ export const nav = [
   { label: "Contact", href: "#visit" },
 ];
 
+export const introStats = [
+  { value: 6, suffix: "+", label: "Premium Varieties" },
+  { value: 100, suffix: "%", label: "Naturally Dried" },
+  { value: 24, suffix: "h", label: "Freshly Packed" },
+  { value: 3, suffix: "", label: "Source Countries" },
+];
+
 export const varieties = [
   {
     name: "Almonds",

@@ -1,0 +1,91 @@
+﻿.product__items--content .h4 a
+{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    min-height: 48px;
+    line-height: 24px;
+}
+#keyfeatures ul li
+{
+    margin-left: 12px;
+    list-style: disc;
+    line-height: 30px;
+}
+.header__account #lblCartCount
+{
+    background: #520608;
+    color: #fff;
+    width: 18px;
+    height: 16px;
+    line-height: 4px;
+    padding: 7px 3px;
+    border-radius: 12px;
+    text-align: center;
+    position: absolute;
+    left: 12px;
+    top: -8px;
+    font-size: 12px;
+}
+.slider-style .slider__content
+{
+    min-height:310px;
+}
+.header__info--list svg path
+{
+    stroke: #fff;
+}
+.blog__section .blog__content--desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.shop__section .store-details .time-detail img,
+.shop__section .store-details .store-footer img
+{
+    max-width: 20px;
+}
+.shop__section .store-details .store-footer .map-pin img
+{
+    max-width:14px;
+}
+.shop__section .store-details li.address-area
+{
+    line-height: 24px;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.shop__section .store-details .store-footer
+{
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    padding: 10px;
+    border: 1px solid #d7d0d0;
+    background: #f2f2f2;
+    margin-top:12px;
+    margin-bottom: 12px;
+}
+.shop__section .store-main .store-address .store-details {
+    padding: 10px 15px;
+}
+.shop__section .store-img
+{
+    padding:10px;
+    border: 2px solid #dbd7d7;
+    border-bottom:0px;
+}
+.shop__section .store-main .store-address
+{
+    border: 2px solid #dbd7d7;
+}
+.shop__section .store-main {
+    margin-bottom:24px;
+}
+.shop__section .store-main .store-img img
+{
+    width:100%;
+}
