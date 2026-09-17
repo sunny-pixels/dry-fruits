@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jost, Nunito, Alex_Brush } from "next/font/google";
 import { CartProvider } from "@/lib/cart-context";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 import "./globals.css";
 
 const jost = Jost({
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${jost.variable} ${nunito.variable} ${alexBrush.variable}`}
     >
       <body className="min-h-full flex flex-col bg-cream text-espresso font-body antialiased">
+        <ScrollToTop />
         <CartProvider>{children}</CartProvider>
       </body>
     </html>
