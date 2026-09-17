@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
           <SectionHeading
             align="left"
             title="Why Choose"
-            script="Nutrafi."
+            script="Rahul Impex"
             subtitle="We obsess over freshness and sourcing, so every bag tastes exactly the way real dry fruit should."
           />
 

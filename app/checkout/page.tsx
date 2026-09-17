@@ -15,7 +15,7 @@ const inputClass =
 
 function generateOrderNumber() {
   const rand = Math.floor(1000 + Math.random() * 9000);
-  return `NUTRAFI-${Date.now().toString().slice(-6)}${rand}`;
+  return `RAHULIMPEX-${Date.now().toString().slice(-6)}${rand}`;
 }
 
 export default function CheckoutPage() {
@@ -46,7 +46,7 @@ export default function CheckoutPage() {
     };
 
     try {
-      sessionStorage.setItem("nutrafi-last-order", JSON.stringify(orderSnapshot));
+      sessionStorage.setItem("rahul-impex-last-order", JSON.stringify(orderSnapshot));
     } catch {
       // ignore
     }

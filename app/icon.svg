@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <rect width="32" height="32" rx="9" fill="#220C01" />
-  <path
-    d="M8 24 L8 8 L12 8 L20 20 L20 8 L24 8 L24 24 L20 24 L12 12 L12 24 Z"
+  <text
+    x="16"
+    y="23"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="800"
+    font-size="20"
     fill="#FFFDFA"
-  />
-  <circle cx="25.3" cy="25.3" r="2.3" fill="#DD761F" />
+  >R</text>
 </svg>

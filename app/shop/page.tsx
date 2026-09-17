@@ -8,8 +8,8 @@ import ProductGrid from "@/components/shop/ProductGrid";
 import { categories, getProductsByCategory, getBestSellers } from "@/lib/products";
 
 export const metadata: Metadata = {
-  title: "Shop | Nutrafi.",
-  description: "Browse premium dry fruits, nuts, dates, berries and gift boxes at Nutrafi.",
+  title: "Shop | Rahul Impex",
+  description: "Browse premium dry fruits, nuts, dates, berries and gift boxes at Rahul Impex.",
 };
 
 export default function ShopPage() {
@@ -24,7 +24,7 @@ export default function ShopPage() {
             The Full Harvest
           </span>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-espresso">
-            Shop Nutrafi.
+            Shop Rahul Impex
           </h1>
           <p className="max-w-xl text-taupe text-base sm:text-lg">
             Handpicked nuts, dates, berries and gifting hampers — sourced fresh and packed with
@@ -46,7 +46,7 @@ export default function ShopPage() {
             eyebrow="Handpicked for You"
             title="Best"
             script="Sellers"
-            subtitle="The Nutrafi favorites our customers keep coming back for."
+            subtitle="The Rahul Impex favorites our customers keep coming back for."
           />
           <div className="mt-14">
             <ProductGrid products={bestSellers} />

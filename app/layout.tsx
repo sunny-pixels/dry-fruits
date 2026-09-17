@@ -22,7 +22,7 @@ const alexBrush = Alex_Brush({
 });
 
 export const metadata: Metadata = {
-  title: "Nutrafi. | Premium Dry Fruits",
+  title: "Rahul Impex | Premium Dry Fruits",
   description:
     "Handpicked, naturally dried, premium quality nuts and dry fruits — sourced with care, packed fresh, delivered to your door.",
 };

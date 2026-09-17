@@ -24,7 +24,7 @@ export async function generateMetadata({
   const product = getProductBySlug(slug);
   if (!product) return {};
   return {
-    title: `${product.name} | Nutrafi.`,
+    title: `${product.name} | Rahul Impex`,
     description: product.description,
   };
 }

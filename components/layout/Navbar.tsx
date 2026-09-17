@@ -55,7 +55,7 @@ export default function Navbar() {
     >
       <Container className="flex items-center justify-between py-5">
         <Link href="/" className="font-heading text-2xl font-bold text-espresso">
-          Nutrafi.
+          Rahul Impex
         </Link>
         <nav className="hidden md:flex items-center gap-10">
           {nav.map((item) => (

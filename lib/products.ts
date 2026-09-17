@@ -53,7 +53,7 @@ export const categories: Category[] = [
   },
   {
     slug: "exclusives",
-    name: "Nutrafi Exclusives",
+    name: "Rahul Impex Exclusives",
     tagline: "Curated mixes, saffron and wellness essentials",
     image: "/images/shop/exclusives/pancharattan-mix.jpg",
   },
@@ -293,7 +293,7 @@ export const products: Product[] = [
     variants: weightVariants(93),
   },
 
-  // Nutrafi Exclusives
+  // Rahul Impex Exclusives
   {
     id: "e1",
     slug: "pancharattan-mix",
@@ -444,7 +444,7 @@ export const products: Product[] = [
     category: "gift-boxes",
     name: "Signature Box",
     description:
-      "The flagship Nutrafi hamper — our finest nuts, dates and saffron, curated for the most special occasions.",
+      "The flagship Rahul Impex hamper — our finest nuts, dates and saffron, curated for the most special occasions.",
     image: "/images/shop/gift-boxes/signature-box.jpg",
     badge: "New",
     variants: [{ label: "1 Box", grams: 0, price: 2999 }],

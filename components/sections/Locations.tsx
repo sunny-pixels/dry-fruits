@@ -56,7 +56,7 @@ export default function Locations() {
             className="relative aspect-[4/3] sm:aspect-[16/10] rounded-[28px] overflow-hidden bg-taupe/10"
           >
             <iframe
-              title="Nutrafi. store locations map"
+              title="Rahul Impex store locations map"
               src="https://maps.google.com/maps?q=Bengaluru&z=12&output=embed"
               className="absolute inset-0 h-full w-full border-0 grayscale-[15%]"
               loading="lazy"

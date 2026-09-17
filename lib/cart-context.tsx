@@ -33,7 +33,7 @@ type Action =
   | { type: "REMOVE"; key: string }
   | { type: "CLEAR" };
 
-const STORAGE_KEY = "nutrafi-cart";
+const STORAGE_KEY = "rahul-impex-cart";
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {

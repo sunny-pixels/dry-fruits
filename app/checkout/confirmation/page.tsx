@@ -24,7 +24,7 @@ export default function ConfirmationPage() {
   useEffect(() => {
     // One-time read of browser storage, unavailable during SSR — cannot be computed at render time.
     try {
-      const raw = sessionStorage.getItem("nutrafi-last-order");
+      const raw = sessionStorage.getItem("rahul-impex-last-order");
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setOrder(raw ? JSON.parse(raw) : null);
     } catch {

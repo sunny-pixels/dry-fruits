@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-espresso text-cream">
       <Container className="py-16 grid grid-cols-2 md:grid-cols-4 gap-10">
         <div className="col-span-2 md:col-span-1">
-          <p className="font-heading text-2xl font-bold">Nutrafi.</p>
+          <p className="font-heading text-2xl font-bold">Rahul Impex</p>
           <p className="mt-4 text-sm text-cream/60 max-w-[220px]">
             Premium dry fruits, handpicked and naturally dried for you.
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
       </Container>
       <div className="border-t border-cream/10">
         <Container className="py-5 text-xs text-cream/40">
-          © {new Date().getFullYear()} Nutrafi. All rights reserved.
+          © {new Date().getFullYear()} Rahul Impex. All rights reserved.
         </Container>
       </div>
     </footer>

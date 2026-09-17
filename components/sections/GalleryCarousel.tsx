@@ -20,7 +20,7 @@ export default function GalleryCarousel() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-8">
           <SectionHeading
             align="left"
-            title="The Nutrafi"
+            title="The Rahul Impex"
             script="Life"
             subtitle="A glimpse into our sourcing, packing and everyday snacking moments."
           />

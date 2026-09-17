@@ -19,7 +19,7 @@ export async function generateMetadata({
   const category = getCategoryBySlug(slug);
   if (!category) return {};
   return {
-    title: `${category.name} | Nutrafi.`,
+    title: `${category.name} | Rahul Impex`,
     description: category.tagline,
   };
 }

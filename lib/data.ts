@@ -104,16 +104,16 @@ export const features = [
 
 export const galleryImages = [
   { src: "/images/gallery-1.jpg", alt: "Gift box of assorted dry fruits" },
-  { src: "/images/gallery-2.jpg", alt: "Nutrafi dry fruits market display" },
+  { src: "/images/gallery-2.jpg", alt: "Rahul Impex dry fruits market display" },
   { src: "/images/gallery-3.jpg", alt: "Close up texture of mixed nuts" },
   { src: "/images/gallery-4.jpg", alt: "Hand holding a scoop of nuts" },
   { src: "/images/gallery-5.jpg", alt: "Lifestyle shot with dry fruit snack" },
 ];
 
 export const stores = [
-  { name: "Nutrafi. Indiranagar", address: "100 Ft Road, Indiranagar, Bengaluru" },
-  { name: "Nutrafi. Bandra", address: "Linking Road, Bandra West, Mumbai" },
-  { name: "Nutrafi. Connaught Place", address: "Block A, Connaught Place, New Delhi" },
+  { name: "Rahul Impex Indiranagar", address: "100 Ft Road, Indiranagar, Bengaluru" },
+  { name: "Rahul Impex Bandra", address: "Linking Road, Bandra West, Mumbai" },
+  { name: "Rahul Impex Connaught Place", address: "Block A, Connaught Place, New Delhi" },
 ];
 
 export const footerInfo = [
